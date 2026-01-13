@@ -1,0 +1,13 @@
+hydra:
+  job:
+    chdir: True
+
+env_name: minigrid_door_key
+algorithm: dqn
+landscape_only: true
+dir: ${hydra:runtime.cwd}
+data_dir: arlbench_data
+repo_id: autorl-org/arlbench
+benchmark: arlbench
+num_configs: 256
+num_seeds: 10
